@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-sslcommerz-example",
+  "version": "1.0.0",
+  "description": "nodejs example of sslcommerz payment gateway",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "qs": "^6.9.4",
+    "sslcommerz": "^1.0.4"
+  },
+  "bugs": {
+    "url": "https://github.com/sslcommerz/SSLCommerz-NodeJS/issues"
+  },
+  "homepage": "https://github.com/sslcommerz/SSLCommerz-NodeJS#readme"
+
+}
