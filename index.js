@@ -1,3 +1,7 @@
+const express = require("express");
+const PORT = 8000;
+const app = express();
+
 const axios = require('axios');
 const qs = require('qs');
 
@@ -40,7 +44,14 @@ async function start() {
         params.form = post_body ? post_body : undefined;
 
         const response = await axios(url, {method: 'POST', data: qs.stringify(post_body)});
-        console.log(response.data);
+
+        app.get("/sslcommerz", (req, res) => {
+            res.send(response.data);
+          });
+
+          app.listen(PORT, () => {
+           console.log(`Server is listening on port: ${PORT}`);
+          });
 
       } catch(error){
         console.log(error) ;
